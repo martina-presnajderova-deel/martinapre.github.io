@@ -12,6 +12,8 @@ description:      'whatever'
 url:              https://github.com/martinapre
 baseurl:          /
 
+paginate:         5
+
 author:
   name:           'MP'
   url:            https://github.com/martinapre
