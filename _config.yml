@@ -16,8 +16,6 @@ author:
   name:           'MP'
   url:            https://github.com/martinapre
 
-paginate:         5
-
 
 github:
   repo:           https://github.com/martinapre
