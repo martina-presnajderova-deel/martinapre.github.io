@@ -18,7 +18,6 @@ title:            MP
 tagline:          'Data'
 description:      'whatever'
 url:              https://github.com/martinapre
-baseurl:          /
 
 paginate:         5
 
