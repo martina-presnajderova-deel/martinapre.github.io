@@ -9,22 +9,10 @@ kramdown:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-      values:
-      layout: default
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
 
 # Permalinks
 permalink:        pretty
+relative_permalinks: true
 
 # Setup
 title:            MP
@@ -38,7 +26,9 @@ paginate:         5
 author:
   name:           'MP'
   url:            https://github.com/martinapre
-
+    
+# Custom vars
+version:          2.1.0
 
 github:
   repo:           https://github.com/martinapre
