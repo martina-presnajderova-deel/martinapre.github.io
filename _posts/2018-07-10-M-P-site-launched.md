@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "MP,Site Launch"
 date: 2018-07-10
 ---
