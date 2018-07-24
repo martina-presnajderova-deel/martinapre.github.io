@@ -9,6 +9,18 @@ kramdown:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+      values:
+      layout: default
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 
 # Permalinks
