@@ -8,9 +8,9 @@
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-
+    
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == absolute_url %} active{% endif %}" href="{{ absolute_url }}">Home</a>
       <a class="sidebar-nav-item" href="/about">About</a>
       <a class="sidebar-nav-item" href="/blog">Blog</a>
 
