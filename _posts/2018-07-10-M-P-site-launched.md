@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "MP,Site Launch"
-date: 2018-07-10
+title: MP,Site Launch
 ---
 
 Site - powered by [Jekyll](http://jekyllrb.com). 
