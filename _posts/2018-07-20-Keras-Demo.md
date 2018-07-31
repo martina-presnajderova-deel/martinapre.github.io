@@ -145,7 +145,7 @@ X_train = X_train / 255 #pixel values are gray scale between 0-255, i.e. transfo
 X_test = X_test / 255
 ```
 
-<img src="martinapre.github.io/images/output_6_0.png" alt="drawing" width="600px"/>
+<img src="martinapre.github.io/images/output_6_0.png" alt="drawing" width="400px"/>
 
 
 
@@ -385,7 +385,7 @@ plt.ylabel('Validation score')
 plt.show()
 ```
 
-<img src="martinapre.github.io/images/output_17_0.png" alt="drawing" width="600px"/>
+<img src="martinapre.github.io/images/output_17_0.png" alt="drawing" width="400px"/>
 
 
 
@@ -428,6 +428,6 @@ for i in range(20):
     Ok, overall on the testing set we classified correctly 8607 out of 10000. Let's now see some pictures that we missed actually.
 
 
+<img src="martinapre.github.io/images/output_18_1.png" alt="drawing" width="550px"/>
 
-![png](output_18_1.png)
 
