@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Multi-Armed Bandit in Web Optimization
@@ -146,8 +145,7 @@ X_train = X_train / 255 #pixel values are gray scale between 0-255, i.e. transfo
 X_test = X_test / 255
 ```
 
-
-![png](output_6_0.png)
+<img src="martinapre.github.io/images/output_6_0.png" alt="drawing" width="600px"/>
 
 
 
@@ -387,8 +385,7 @@ plt.ylabel('Validation score')
 plt.show()
 ```
 
-
-![png](output_17_0.png)
+<img src="martinapre.github.io/images/output_17_0.png" alt="drawing" width="600px"/>
 
 
 
