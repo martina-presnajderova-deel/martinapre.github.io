@@ -4,7 +4,7 @@ layout: post
 title: Multi-Armed Bandit in Web Optimization
 ---
 
-<img src="img/keras.png" alt="drawing" width="250px"/>
+<img src="martinapre.github.io/images/keras.png" alt="drawing" width="250px"/>
 
 # Keras Demo
 **What is it?** 
