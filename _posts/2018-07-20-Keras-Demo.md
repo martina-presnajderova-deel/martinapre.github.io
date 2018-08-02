@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Multi-Armed Bandit in Web Optimization
+title: Keras Demo
 ---
 
 <img src="martinapre.github.io/images/keras.png" alt="drawing" width="250px"/>
 
-# Keras Demo
 **What is it?** 
 Keras is a wrapper on top of Tensorflow and Theano. It is an easy-to-use high-level neural networks API to develop and evaluate deep learning models.
 
