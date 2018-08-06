@@ -3,13 +3,13 @@ layout: post
 title: Resampling methods:Cross-validation
 ---
 
-**What is it?** By repeatedly drawing samples from training set, we re-fit the model on each of these sample in order to obtain additional information about the fitted model.
+**What is it?** By repeatedly drawing sub-samples from training set, we re-fit the model on each of these sub-samples in order to obtain additional information about the fitted model.
 
-**Motivation?** Simply, the difference between test error and training error. Test error is difficult to obtain (absence of large test set) = > estimate test error: either mathematically OR holding out a subset of training data when fitting model and then applying a model on this omitted set.
+**Motivation?** Simply, the difference between test error and training error. Because in real world test error is difficult to obtain (absence of large test set), we estimate the test error: either mathematically OR as holding out a subset of training data when fitting model and then applying a model on this omitted set.
 
 **What is it good for?**
-- Measure how well a given statistical learning procedure can be expected to perform on independent data = the actual estimate of the test MSE is of interest.
-- The location of minimum point in the estimated test MSE curve - the actual value of MSE-not important, location of minimum on MSE curve-important
+- Measure how well can a given statistical learning procedure be expected to perform on independent data = the actual estimate of the test MSE is of interest.
+- The location of minimum point in the estimated test MSE curve - the actual value of MSE-not important, in fact the location of minimum on MSE curve is important.
 
 
 ```python
@@ -32,7 +32,7 @@ plt.title("Why to split into train/test set in the first place?")
 
 plt.show()
 ```
-<img src="martinapre.github.io/images/RM.png" alt="drawing" width="600px"/>
+<img src="martinapre.github.io/images/RM.png" alt="drawing" width="400px"/>
 
 **Why not simple "Validation set approach" aka split into two sets** If we split training set randomly many times, test MSE will vary in value, all curves by there shape can tell which model is better(MSE lower) but we do not know the absolute value of MSE, i.e. we run into 2 drawbacks
 - MSE varies across different random split of the data
