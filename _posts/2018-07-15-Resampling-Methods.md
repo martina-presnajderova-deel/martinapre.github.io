@@ -1,6 +1,7 @@
-
-# Resampling methods
-## Cross-validation
+---
+layout: post
+title: Resampling methods:Cross-validation
+---
 
 **What is it?** By repeatedly drawing samples from training set, we re-fit the model on each of these sample in order to obtain additional information about the fitted model.
 
@@ -31,10 +32,7 @@ plt.title("Why to split into train/test set in the first place?")
 
 plt.show()
 ```
-
-
-![png](output_1_0.png)
-
+<img src="martinapre.github.io/images/RM.png" alt="drawing" width="600px"/>
 
 **Why not simple "Validation set approach" aka split into two sets** If we split training set randomly many times, test MSE will vary in value, all curves by there shape can tell which model is better(MSE lower) but we do not know the absolute value of MSE, i.e. we run into 2 drawbacks
 - MSE varies across different random split of the data
