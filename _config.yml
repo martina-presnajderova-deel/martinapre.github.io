@@ -8,8 +8,10 @@ kramdown:
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
-
-
+    
+plugins:
+  - jekyll-seo-tag
+  
 # Permalinks
 permalink:        pretty
 
@@ -18,6 +20,7 @@ title:            MP
 tagline:          'Data'
 description:      'Martina Presnajderova | Data | Statistics | Python | R | ML | Riddles'
 url:              https://github.com/martinapre
+
 
 paginate:         5
 
