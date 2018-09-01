@@ -14,11 +14,11 @@ Keras is a wrapper on top of Tensorflow and Theano. It is an easy-to-use high-le
 **What is it good for?**
 - Fast experimentation, *although TF now has [Eager execution](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/eager/python/examples) - interface where operations are executed immediately as they are called from Python*
 - When would you go deeper then? I.e. use TF rather than high-level Keras?
-  - flexibility: can tweak more
-  - functionality
+  - Flexibility: can tweak more
+  - Functionality
    - Threading&Queues
    - Debugger: provides visibility into the internal structure and states of running TF graphs
-  - control: operations on weights, gradients,..
+  - Control: operations on weights, gradients,..
 
 
 
@@ -26,7 +26,6 @@ Keras is a wrapper on top of Tensorflow and Theano. It is an easy-to-use high-le
 I.e. numerical output variable 
 
 ### Specify Architecture
-
 
 ```python
 import keras
@@ -72,29 +71,22 @@ print("Loss function: " + model.loss)
 model.fit(X,y)
 #just as a simple demo, we didn't deploy any scaling,.. 
 ```
-
     Loss function: mean_squared_error
     Epoch 1/1
     506/506 [==============================] - 0s 880us/step - loss: 13087.2959
 
 
 
-
-
-    <keras.callbacks.History at 0xb2ea875d0>
-
-
-
 ## Classification 
 I.e. categorical output variable
 
-### Specify Architecture, Compile and Fit (few differences in comparison to regression)
+### Specify Architecture, Compile and Fit - the differences in comparison to regression
 
 - 1st difference in Loss function - categorical_crossentropy
 - 2nd add metrics accuracy to compile step for easy to understand diagnostics
 - 3rd modify the last layer - separate node for each possible outcome and use softmax
 
-We will use one of the mnist datasets - [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist). It has the same attributes as MNIST, image size (28x28), structure of training (60,000) and testing (10,000) splits, and 10 categories.
+We will use one of the mnist datasets - [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist). It has the same attributes as MNIST (image size 28x28, structure of training - 60,000 and testing - 10,000 splits, and 10 categories) and is more fun.
 
 Label | Description | Label | Description 
 --- | --- | --- | --- 
@@ -176,34 +168,12 @@ model.compile(optimizer='adam',
 # Fit the model
 model.fit(X_train, y_train, epochs=10, batch_size=100, verbose=2)
 ```
-
-    Epoch 1/10
-     - 4s - loss: 0.4944 - acc: 0.8269
-    Epoch 2/10
-     - 4s - loss: 0.3617 - acc: 0.8705
-    Epoch 3/10
-     - 4s - loss: 0.3247 - acc: 0.8819
-    Epoch 4/10
-     - 4s - loss: 0.3009 - acc: 0.8886
-    Epoch 5/10
-     - 4s - loss: 0.2804 - acc: 0.8962
-    Epoch 6/10
-     - 4s - loss: 0.2679 - acc: 0.9013
-    Epoch 7/10
-     - 4s - loss: 0.2547 - acc: 0.9050
     Epoch 8/10
      - 4s - loss: 0.2400 - acc: 0.9108
     Epoch 9/10
      - 4s - loss: 0.2288 - acc: 0.9139
     Epoch 10/10
      - 4s - loss: 0.2216 - acc: 0.9164
-
-
-
-
-
-    <keras.callbacks.History at 0xb1615b0d0>
-
 
 
 ### Predict
@@ -344,13 +314,6 @@ model.fit(X_train, y_train, validation_split=0.3, epochs=30, callbacks=[early_st
     42000/42000 [==============================] - 8s 182us/step - loss: 0.2695 - acc: 0.8989 - val_loss: 0.3233 - val_acc: 0.8827
     Epoch 7/30
     42000/42000 [==============================] - 7s 171us/step - loss: 0.2553 - acc: 0.9042 - val_loss: 0.3587 - val_acc: 0.8692
-
-
-
-
-
-    <keras.callbacks.History at 0xb1dcdfa10>
-
 
 
 ### Validation - Compare two models
