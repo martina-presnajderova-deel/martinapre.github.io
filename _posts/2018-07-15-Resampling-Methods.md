@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resampling methods: Cross-validation
+title: Resampling methods - Cross-validation
 ---
 
 **What is it?** By repeatedly drawing sub-samples from training set, we re-fit the model on each of these sub-samples in order to obtain additional information about the fitted model.
